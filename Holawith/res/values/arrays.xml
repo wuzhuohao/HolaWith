@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_list">
+        <item>类别</item>
+        <item>类别1</item>
+        <item>类别2</item>
+        <item>类别3</item>
+        <item>类别4</item>
+   </string-array>
+</resources>

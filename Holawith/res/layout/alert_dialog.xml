@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  
+    <LinearLayout 
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="190dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+     android:background="#ffffff"
+     >
+    
+     <RelativeLayout
+        android:id="@+id/btn_pick_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/alertalbum"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/iconsssss_29"
+           
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/albumcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="从手机相册选择"
+            android:textColor="#090909"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/alertalbum"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+      <RelativeLayout
+        android:id="@+id/btn_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/alertcamera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/iconsssss_25"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/cameracontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="拍照"
+            android:gravity="center_vertical"
+            android:textColor="#090909"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/alertcamera"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/alertcancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icons_color_62"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/cancelcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="取消"
+            android:gravity="center_vertical"
+            android:textColor="#090909"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/alertcancel"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+</LinearLayout>
+
+</RelativeLayout>

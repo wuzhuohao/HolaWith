@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/indexban"
+        android:layout_width="match_parent"
+        android:background="#03A9F4"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/index_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow"
+            android:scaleType="centerCrop"/>
+        <TextView 
+            android:id="@+id/index_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/index_left"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="通讯录"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>   
+         <ImageView
+             android:id="@+id/indexplus"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:src="@drawable/nor_plus_whi"
+             android:scaleType="centerCrop"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="10dp"/>
+         <ImageView
+             android:id="@+id/indexsearch"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:src="@drawable/search"
+             android:scaleType="centerCrop"
+             android:layout_toLeftOf="@+id/indexplus"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="10dp" />    
+    </RelativeLayout>
+   
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#ffffff" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="#f0606060"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:background="#d7d7d7"
+            android:gravity="center"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

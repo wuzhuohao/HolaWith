@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/roomban"
+        android:layout_width="match_parent"
+        android:background="#03A9F4"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/chat_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow"
+            android:scaleType="centerCrop"/>
+        <TextView 
+            android:id="@+id/chat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chat_left"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="拉萨自由行"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>   
+         <ImageView
+             android:id="@+id/icons68"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:src="@drawable/icons_68"
+             android:scaleType="centerCrop"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="10dp"/>
+                  
+    </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10">
+            <LinearLayout
+                android:id="@+id/chatcontentarea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"/>
+        </ScrollView>
+        <RelativeLayout
+            android:id="@+id/editchatcontentlayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/editchatcontent"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:scrollbars="vertical"
+                android:scrollbarFadeDuration="2000"
+                android:textSize="13dp"
+                android:textColor="#090909">
+                
+            </EditText>
+            <Button
+                android:id="@+id/send"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/editchatcontent"
+                android:layout_alignBottom="@+id/editchatcontent"
+                android:layout_marginLeft="10dp"
+  
+                android:background="@drawable/buttonbk"
+                android:text="发送"
+                android:textColor="#090909"
+                android:textSize="13dp"/>
+        </RelativeLayout>
+   
+
+</LinearLayout>

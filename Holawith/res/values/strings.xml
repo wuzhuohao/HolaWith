@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Holawith</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="allkind">类别</string>
+    <string name="kind_one">类别1</string>
+    <string name="kind_two">类别2</string>
+    <string name="kind_three">类别3</string>
+    <string name="kind_four">类别4</string>
+    <string name="kind_five">类别5</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <RelativeLayout 
+        android:id="@+id/fclayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:background="#03a9f4">
+        <ImageView
+            android:id="@+id/farrow"
+            android:layout_width="30dp" 
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/fcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/farrow"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="朋友圈"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+        <ImageView
+            android:id="@+id/editf"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icons_31"
+            android:scaleType="centerCrop"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/walllayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/fclayout">
+    <ImageView
+        android:id="@+id/frwall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/funame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="安易晨"
+        android:textColor="#ffffff"
+        android:textSize="30dp"/>
+    </RelativeLayout>
+    <com.example.holawith.RoundImageView
+        android:id="@+id/fpic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="170dp"
+        android:src="@drawable/pic3"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+<ScrollView 
+    android:layout_below="@+id/fpic"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/fcontentpad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+ </ScrollView>   
+</RelativeLayout>
+

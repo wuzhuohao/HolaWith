@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent" >
+    <ImageView 
+        android:id="@+id/img_con"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/food"
+        android:scaleType="centerCrop"/>
+     <RelativeLayout
+        android:layout_below="@+id/img_con"
+        android:id="@+id/introban"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#03A9F4">
+         <TextView
+         android:id="@+id/intro_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="10dp"
+         android:text="潮汕美食攻略"
+         android:textColor="#ffffff"
+         android:textSize="20dp"/>
+         <com.example.holawith.RoundImageView
+             android:id="@+id/introunsign"
+             android:layout_width="15dp"
+             android:layout_height="15dp"
+             android:layout_below="@+id/intro_name"
+             android:layout_marginTop="10dp"
+             android:layout_alignLeft="@+id/intro_name"
+             android:src="@drawable/u68_normal"/>
+         <TextView
+             android:id="@+id/introsponsor"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@+id/unsign"
+             android:layout_below="@+id/intro_name"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="25dp"
+             android:text="帽子先森"
+             android:textSize="15dp"
+             android:textColor="#ffffff"/>
+    </RelativeLayout>
+              <TextView
+                  android:id="@+id/introcontent"
+                  android:layout_below="@+id/introban"
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:singleLine="false"
+                  android:scrollbars="vertical"
+                  android:scrollbarFadeDuration="2000"
+                  android:text="外貌绚丽、姿态娇媚，是风靡各大咖啡厅、烘焙门市及西餐厅的时髦甜点。 这一甜点自20世纪80年代中期走.红。现今，世界各地的各色高档餐馆都可能供应此甜点，而不为意式餐馆所专供。它的配方中具创.新意义的是咖啡风味的起士奶蛋液，这一新口味亦为蛋糕、布丁等其它形式的冷热甜点所吸收。
+它以香醇浓沉的口感，将Espresso（特浓意大利咖啡）的苦、蛋与糖的润、甜酒的醇、巧克力的馥郁、手指饼干的绵密、乳酪和鲜奶油的稠香、可可粉的干爽，揉合在一起。只用了不到十种材料，把“甜”以及甜所能唤起的种种错综复杂的体验."
+                  android:textColor="#999999"
+                  android:textSize="13dp"/>
+</RelativeLayout>

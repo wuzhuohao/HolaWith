@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="150dp" >
+    <com.example.holawith.RoundImageView
+        android:id="@+id/porait"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/pic"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/actiontitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/porait"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="拉萨自由行"
+        android:textColor="#000000"
+        android:textSize="17dp"/>
+    <TextView
+        android:id="@+id/sponsor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actiontitle"
+        android:layout_alignLeft="@+id/actiontitle"
+        android:layout_marginTop="4dp"
+        android:text="帽子先森 — 寻找心中最后的香格里拉稻城。。。"
+        android:singleLine="false"
+        android:textColor="#000000"
+        android:textSize="13dp"/>
+    <View
+        android:layout_alignLeft="@+id/sponsor"
+        android:layout_below="@+id/sponsor"
+        android:layout_marginTop="20dp"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#E0E0E0"/>
+</RelativeLayout>
