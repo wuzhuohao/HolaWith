@@ -86,24 +86,22 @@
      		     android:id="@+id/newaction"
      		     android:layout_width="wrap_content"
      		     android:layout_height="wrap_content"
-     		     android:layout_below="@+id/more"
+     		     android:layout_below="@+id/hscrollview"
      		     android:layout_marginTop="5dp"
      		     android:layout_alignParentLeft="true"
      		     android:layout_marginLeft="20dp"
      		     android:text="最新活动"
      		     android:textColor="#919191"
      		     android:textSize="15dp"/>
-     		 <ScrollView
+     		 <com.handmark.pulltorefresh.library.PullToRefreshListView
+     		     xmlns:ptr="http://schemas.android.com/apk/res-auto"
+     		     android:id="@+id/pull_to_refresh_listview"
+     		     android:layout_height="fill_parent"
+     		     android:layout_width="fill_parent"
      		     android:layout_below="@+id/newaction"
-     		     android:layout_marginTop="10dp"
-     		     android:layout_width="match_parent"
-     		     android:layout_height="match_parent">
-     		     <LinearLayout 
-     		        android:id="@+id/actionpad"
-     		        android:layout_width="match_parent"
-     		        android:layout_height="match_parent"
-     		        android:orientation="vertical">
-     		     </LinearLayout>
-     		 </ScrollView>
-    		 
+     		     android:background="@android:color/white"
+     		     ptr:ptrMode="pullFromStart"
+     		     ptr:ptrHeaderTextColor="@android:color/black"
+     		     ptr:ptrHeaderSubTextColor="@android:color/black" 
+     		     ptr:ptrAnimationStyle="flip"/>
 </RelativeLayout>

@@ -1,5 +1,7 @@
 package com.example.holawith;
 
+import com.holawith.Mychatroom.R;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.widget.Button;

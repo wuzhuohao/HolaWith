@@ -33,6 +33,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.holawith.Mychatroom.R;
 import com.holawith.basic.GLOBAL;
 import com.network.holawith.Transfer;
 

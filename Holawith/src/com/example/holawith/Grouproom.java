@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.holawith.Mychatroom.R;
 import com.network.holawith.Transfer;
 
 public class Grouproom extends Activity {

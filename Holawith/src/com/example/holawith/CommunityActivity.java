@@ -1,5 +1,7 @@
 package com.example.holawith;
 
+import com.holawith.Mychatroom.R;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;

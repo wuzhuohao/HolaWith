@@ -3,6 +3,8 @@ package com.example.holawith;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.holawith.Mychatroom.R;
+
 import android.app.Activity;
 import android.app.LocalActivityManager;
 import android.content.Context;

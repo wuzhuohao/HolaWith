@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.example.holawith.R;
+import com.holawith.Mychatroom.R;
 
 import android.content.Context;
 import android.view.LayoutInflater;

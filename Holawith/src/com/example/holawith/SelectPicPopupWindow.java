@@ -8,6 +8,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+import com.holawith.Mychatroom.R;
+
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;

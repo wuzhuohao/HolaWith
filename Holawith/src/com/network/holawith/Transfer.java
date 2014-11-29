@@ -1,5 +1,10 @@
 package com.network.holawith;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -157,10 +162,20 @@ public class Transfer {
 		return rel;
 	}
 	public static String Get_action_item(int index_from){
-		Map map = new HashMap();
+		Map<String,Object> map = new HashMap<String, Object>();
+		DateFormat d = new SimpleDateFormat("yyyyMMddHHmmss");
+		Calendar calendar = GregorianCalendar.getInstance();
+		Date date = calendar.getTime();
 		map.put("index_from", index_from);
+		map.put("update_time", d.format(date));		
 		String cont = new JSONObject(map).toString();
-		String rel = Communicator.sendGet("activity/get/", cont);
+		StringBuffer sb = new StringBuffer();
+		sb.append("?");
+		for (Map.Entry<String, Object> entry : map.entrySet()) {
+			sb.append(entry.getKey() + "=" + entry.getValue() + "&");
+		}
+		sb.deleteCharAt(sb.length() - 1);
+		String rel = Communicator.sendGet("activity/get/", sb.toString());
 		return rel;
 	}
 

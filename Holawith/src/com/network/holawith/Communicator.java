@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.Map;
 
 import android.util.Log;
@@ -24,7 +25,7 @@ public class Communicator {
 		HttpURLConnection connection = null;
 		InputStream in = null;
 		try {
-			url = new URL("http://" + backendIP + method + "?index_from=0");
+			url = new URL("http://" + backendIP + method + content/* + "?index_from=0"*/);
 			connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("GET");
 			connection.setDoInput(true);

@@ -1,4 +1,6 @@
 package com.example.holawith;
+import com.holawith.Mychatroom.R;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

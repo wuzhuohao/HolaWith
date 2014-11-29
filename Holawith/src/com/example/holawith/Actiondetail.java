@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.holawith.Mychatroom.R;
 import com.holawith.basic.GLOBAL;
 import com.network.holawith.Transfer;
 
@@ -93,7 +94,7 @@ public class Actiondetail extends Activity {
 					  
 					}
 					else if(which==2){
-						
+						startActivity(new Intent(Actiondetail.this,MapActivity.class));
 					}
 					else if(which==3){
 					  Intent intent = new Intent(Actiondetail.this,IssueAction.class);

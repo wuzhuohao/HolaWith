@@ -1,5 +1,7 @@
 package com.example.holawith;
 
+import com.holawith.Mychatroom.R;
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;

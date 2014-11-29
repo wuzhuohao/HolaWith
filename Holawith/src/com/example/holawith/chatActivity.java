@@ -3,6 +3,8 @@ package com.example.holawith;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.holawith.Mychatroom.R;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;

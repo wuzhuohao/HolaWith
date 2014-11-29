@@ -11,7 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-import com.example.holawith.R;
+import com.holawith.Mychatroom.R;
 
 public class gridviewadapter extends BaseAdapter {
 	private Context context;
